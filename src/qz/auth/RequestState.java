@@ -86,7 +86,8 @@ public class RequestState {
     }
 
     public boolean hasSavedCert() {
-        return isVerified() && certUsed.isSaved();
+        return true;
+        // return isVerified() && certUsed.isSaved();
     }
 
     public boolean hasBlockedCert() {
