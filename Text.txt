@@ -2,7 +2,7 @@ Inorder to disable the Pop up message in QZ-TRAY do the following steps...
 
 Step 1: Go to GatewayDialog.java file and Line Number (88) Change the Following code
   
-from
+From
      persistentCheckBox.addActionListener(e -> allowButton.setEnabled(!persistentCheckBox.isSelected() || request.isVerified()));
 
 to 
@@ -11,7 +11,7 @@ to
      
 Step 2: Go to RequestState.java (path: src/qz/auth/RequestState.java) file and Line Number (89) Change the Following code 
 
-from
+From
      return isVerified() && certUsed.isSaved();
 
 to
